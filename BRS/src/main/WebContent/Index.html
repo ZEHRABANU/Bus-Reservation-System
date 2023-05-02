@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button {
+ background-color: rgb(255, 128, 0);
+ color: black;
+ padding: 14px 20px;
+ margin: 5px 0;
+ border: none;
+ cursor: pointer;
+ width:24%;
+ opacity: 0.9;
+ font-size:20px;
+}
+button:hover {
+ opacity:1;
+}
+body {
+ background-image: url('100.jpg');
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+
+}
+marquee{
+font-size:50px;
+}
+ input[type="text"],input[type="submit"],input[type="Date"],select
+{
+ font-size:20px;
+}
+label{
+font-size:24px;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title> Welcome to MyExpressBus</title>
+</head>
+<body >
+<center><h1>Welcome to MyExpressBus</h1></center><br><br> 
+	<button type="button" onclick="location.href='Welcome.html'">Home</button> 
+	<button type="button" onclick="location.href='SignIn.jsp'">Login</button> 
+	<button type="button" onclick="location.href='Index.html'">Search Bus</button> 
+	<button type="button" onclick="location.href='AdminSignIn.jsp'">Admin Login</button> 
+<br><br><br><br>
+<center>
+<form action="Welcome1.html">
+<label>Source</label>
+ 	<select name="src" id="src" placeholder="enter Ticket price">
+ 		<option value="Bangalore">Bangalore</option>
+ 		<option value="Belgavi">Vizag</option>
+ 		<option value="Chennai">Chennai</option>
+ 		<option value="Delhi">Delhi</option>
+ 		<option value="Mumbai">Mumbai</option>
+ 		<option value="Hyderabad">Hyderabad</option>
+ 	</select>
+<label>Destination</label>
+	<select name="des" id="des">
+ 		<option value="Banglore">Banglore</option>
+ 		<option value="Belgavi">Vizag</option>
+ 		<option value="Chennai">Chennai</option>
+ 		<option value="Delhi">Delhi</option>
+ 		<option value="Mumbai">Mumbai</option>
+ 		<option value="Hyderabad">Hyderabad</option>
+	</select>
+<label>Date</label>
+<input type=Date name="date" placeholder="enter Ticket price">
+<input type="submit" value="Search Bus">
+</form>
+</center>
+</body>
+</html>
